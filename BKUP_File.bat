@@ -10,7 +10,7 @@ tree /f %copyFile% > log\beforTree.log
 
 md %saveDirectory%
 
-xcopy /e /y %copyFile% %saveDirectory% /EXCLUDE:D:\ExcludeFile.txt
+xcopy /e /y %copyFile% %saveDirectory% /EXCLUDE:.\ExcludeFile.txt
 
 tree /f %saveDirectory% > log\afterTree.log
 
