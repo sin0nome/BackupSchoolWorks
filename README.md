@@ -22,9 +22,3 @@ SET destination="D:\"
 * コピー先のディレクトリを指定します。
   - 指定したディレクトリ内に日付フォルダが生成され、指定した除外ファイル以外コピーされます。 :warning: 既に存在した場合強制的に上書きされるので注意
     + 上書きしてもよいか確認する場合は`xcopy /e /y %copyFile% %saveDirectory% /EXCLUDE:.\ExcludeFile.txt`のオプションを`-y`に変更してください
-
-```
-SET copyFile="C:\"
-SET destination="D:\"
-```
-
