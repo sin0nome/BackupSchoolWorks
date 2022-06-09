@@ -7,14 +7,12 @@ set saveDirectory=%destination%\%saveDate%
 
 md log
 tree /f %copyFile% > log\beforTree.log
-tree /f %copyFile%
 
 md %saveDirectory%
 
 xcopy /e /y %copyFile% %saveDirectory% /EXCLUDE:D:\ExcludeFile.txt
 
 tree /f %saveDirectory% > log\afterTree.log
-tree /f %saveDirectory%
 
 @rem 比較
 fc \n log\beforTree.log log\afterTree.log
